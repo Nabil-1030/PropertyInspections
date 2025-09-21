@@ -279,8 +279,6 @@ main section > p {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
   width: 100%;
-  margin: 0 0 30px 0;
-  padding: 0 30px;
   margin: 0 auto 30px;
 }
 
@@ -324,6 +322,8 @@ main section > p {
 .footer-legal ul {
   list-style: none;
   font-weight: bold;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .footer-links li,
