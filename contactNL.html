@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Property Inspections</title>
+  <link rel="stylesheet" href="/CSS/contactStyle.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-container">
+
+    <!-- Logo links -->
+    <img src="/IMAGES/Test_Logo.png" alt="Property Inspections logo" class="logo">
+
+    <!-- Titel in het midden -->
+    <div class="header-center">
+      <h1 class="nav-title">Property Inspections</h1>
+    </div>
+
+    <!-- Nav-links rechts -->
+    <nav>
+      <ul>
+        <li><a href="/homeNL.html">Home</a></li>
+        <li><a href="/serviceNL.html">Service</a></li>
+        <li><a href="/contactNL.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Achtergrondfoto + overlay -->
+    <div class="nav-bg"></div>
+  </div>
+</header>
+
+<hr>
+
+<!-- Main content -->
+<main>
+  <section>
+    <h2>Contacteer ons</h2>
+    <p>Voor vragen of om een plaatsbeschrijving aan te vragen, vul onderstaand formulier in:</p>
+    
+    <form action="https://formspree.io/f/mjkeqakp" method="post">
+      
+      <!-- Contactgegevens -->
+      <h3>Contactgegevens</h3>
+      <label for="name">Naam*:</label>
+      <input type="text" id="name" name="name" placeholder="Uw naam" required>
+
+      <label for="email">E-mail*:</label>
+      <input type="email" id="email" name="email" placeholder="Uw e-mail" required>
+
+      <label for="phone">Telefoonnummer:</label>
+      <input type="tel" id="phone" name="phone" placeholder="">
+
+      <!-- Pandgegevens -->
+      <h3>Pandgegevens:</h3>
+      <!-- <h4>Adres van het pand:</h4> -->
+      <label for="straat">Straat*:</label>
+      <input type="text" id="straat" name="straat" placeholder="Straat" required>
+      <label for="nr">Huisnummer*:</label>
+      <input type="text" id="nr" name="nr" placeholder="Nummer" required>
+      <label for="postcode">Postcode*:</label>
+      <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+      <label for="pand">Type pand*:</label>
+      <select name="pand" id="pand" required>
+        <option value="" disabled selected>Kies het type pand ...</option>
+        <option value="garage">Garage</option>
+        <option value="studio">Studio</option>
+        <option value="appartement1">Appartement 1 kamer</option>
+        <option value="appartement2">Appartement 2 kamers</option>
+        <option value="appartement3">Appartement 3 kamers</option>
+        <option value="woning">Woning</option>
+        <option value="villa">Villa</option>
+        <!-- <option value="handel">Handelspand/Magazijn</option> -->
+      </select>
+
+      <label for="type_pb">Type plaatsbeschrijving*:</label>
+      <select id="type_pb" name="type_pb" required>
+        <option value="" disabled selected>Kies een type...</option>
+        <option value="intrede">Intrede</option>
+        <option value="uittrede">Uittrede</option>
+    
+      </select>
+
+      <label for="datum">Gewenste datum*:</label>
+      <input type="date" id="datum" name="datum" required>
+
+      <!-- Extra informatie -->
+      <h3>Extra informatie</h3>
+      <label for="message">Bericht:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Uw bericht..."></textarea>
+
+      <button type="submit">Aanvraag sturen</button>
+    </form>
+  </section>
+</main>
+
+<hr>
+
+<!-- Footer -->
+<footer role="contentinfo" aria-label="Footer van Property Inspections" class="site-footer">
+    <div class="footer-inner">
+
+      <!-- Company block -->
+      <div class="footer-col footer-company">
+        <p class="footer-company-name">Property Inspections</p>
+        <p class="footer-small">RECHTSVORM: <strong>BV</strong> • Ondernemingsnummer: <strong>BE 0123.456.789 a changer</strong></p>
+        <p class="footer-small">Adres: 2800 Mechelen, <br> Belgium</p>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col footer-links">
+        <h4>Snelle links:</h4>
+        <ul>
+          <li><a href="/homeNL.html">Home</a></li>
+          <li><a href="/serviceNL.html">Services</a></li>
+          <li><a href="/contactNL.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer-col footer-legal">
+        <h4>Juridisch:</h4>
+        <ul>
+          <li><a href="/HTML/termsNL.html">Algemene voorwaarden</a></li>
+          <li><a href="/HTML/privacyNL.html">Privacybeleid</a></li>
+          <li><a href="/HTML/disclaimerNL.html">Disclaimer &amp; aansprakelijkheid</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & hours -->
+      <div class="footer-col footer-contact">
+        <h4>Contact:</h4>
+        <p class="footer-small">E-mail: <a href="mailto:contact@pibelgium.com">contact@pibelgium.com</a></p>
+        <p class="footer-small">Tel: <a href="tel:+32489181096">+32 489 18 10 96</a></p>
+        <h5 class="opening">Openingsuren:</h5>
+        <p class="footer-small">Ma–Vr: 17:30–21:00 (op afspraak)<br>Za-Zo &amp; feestdagen: op afspraak</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom line -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Property Inspections — Alle rechten voorbehouden.</p>
+      <p class="footer-small">Deze website is eigendom van Property Inspections. Voor vragen over juridische zaken: <a href="/HTML/contactNL.html">Contacteer ons</a>.</p>
+    </div>
+</footer>
+</body>
+</html>
