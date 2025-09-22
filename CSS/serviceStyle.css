@@ -354,3 +354,112 @@ main section > p {
   font-size: 0.85rem;
   color: var(--accent-2) ;
 }
+
+.lang-switch {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: var(--accent-2, #333);
+  margin: 0 6px;
+  transition: color 0.2s ease;
+}
+
+.lang-switch a:hover {
+  color: var(--accent, #0066cc);
+}
+
+.lang-switch .active {
+  text-decoration: underline;
+  color: var(--accent, #0066cc);
+}
+
+@media (max-width: 880px) {
+  .header-container { flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 12px; }
+
+  .logo { height: 70px; margin-bottom: 10px; }
+  .header-center { margin-bottom: 20px; align-items: center; }
+  nav ul { justify-content: center; gap: 10px; }
+  main { padding: 24px 10px 48px; }
+  section { padding: 18px; }
+  h2 { font-size: 1.4rem; }
+}
+
+@media (max-width: 480px) {
+  .logo { 
+    height: 60px; }
+
+  nav ul { 
+    flex-direction: column; 
+    gap: 8px; 
+    align-items: center; 
+    padding: 10px 0;
+  }
+  .nav-title { font-size: 1.3rem; }
+  .header-center { width: 100%; margin-bottom: 20px; text-align: center; }
+}
+
+/*style voor 3 paginas voor juridische*/
+/* Juridische pagina’s */
+.legal-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px 60px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(11,79,145,0.08);
+}
+
+.legal-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--accent-2);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 10px;
+}
+
+.legal-page h2 {
+  font-size: 1.4rem;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  color: var(--accent);
+  border-left: 4px solid var(--accent-2);
+  padding-left: 10px;
+}
+
+.legal-page h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: darkblue;
+  border-left: 3px solid var(--accent);
+  padding-left: 8px;
+  text-decoration: underline;
+}
+
+.legal-page p {
+  margin-bottom: 14px;
+  color: var(--text-light);
+  line-height: 1.65;
+}
+
+.legal-page ul, 
+.legal-page ol {
+  margin: 0 0 16px 25px;
+}
+
+.legal-page li {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+.legal-page a {
+  color: var(--accent-2);
+}
+
