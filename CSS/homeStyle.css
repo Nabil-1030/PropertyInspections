@@ -346,4 +346,7 @@ hr {
   margin-bottom: 8px;
   color: var(--text);
 }
+.legal-page a {
+  color: var(--accent-2);
+}
 

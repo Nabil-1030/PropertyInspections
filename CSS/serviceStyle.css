@@ -303,6 +303,7 @@ main section > p {
 .footer-company-name {
   font-weight: 700;
   margin-bottom: 5px;
+  text-decoration: underline;
 }
 
 .footer-small {
