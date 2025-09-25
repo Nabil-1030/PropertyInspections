@@ -1,0 +1,43 @@
+/* Basisstijl */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f5f0e6; /* zelfde beige als je andere site */
+  color: #1f2937;
+  text-align: center;
+}
+
+/* De tekst */
+p {
+  font-size: 1.2rem;
+  color: #0b4f91; /* accentkleur */
+  font-weight: 500;
+}
+
+/* Linkstijl */
+a {
+  color: #0f6fbf;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  border-bottom: 2px solid #0f6fbf;
+  color: #0b4f91;
+}
+
+/* Kleine fade-in animatie */
+body {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

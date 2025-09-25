@@ -127,6 +127,30 @@ main section > p {
   margin: auto 20px 20px;
 }
 
+/* Extra info blok */
+.extra-info {
+  margin: 20px 20px auto 20px;
+  padding: 1.2rem 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #2c3e50;
+  border-right: 4px solid #2c3e50; /* donkerblauwe accentlijn */
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.6;
+}
+
+.extra-info strong {
+  color: red; /* benadrukt belangrijk woord */
+}
+
+.extra-info em {
+  font-style: italic;
+  color: green;
+
+}
+
+
 /* Tablet: 2 per rij */
 @media (min-width: 768px) {
   .services-grid {
