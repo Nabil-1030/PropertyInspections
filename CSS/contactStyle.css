@@ -310,28 +310,36 @@ hr {
 
 /* Responsive */
 @media (max-width: 880px) {
-  .header-container { flex-direction: row; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 12px; }
+  .header-container {
+    display: block;
+  }
 
-  .logo { height: 70px; margin-bottom: 10px; }
-  .header-center { margin-bottom: 20px; align-items: center; }
-  nav ul { justify-content: center; gap: 10px; }
-  main { padding: 24px 10px 48px; }
-  section { padding: 18px; }
-  h2 { font-size: 1.4rem; }
+  .logo {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .nav-title {
+    /* font-size: 1.5rem; */
+    margin: 0px 0px;
+  } 
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 }
 
 @media (max-width: 480px) {
-  .logo { 
-    height: 60px; }
-
-  nav ul { 
-    flex-direction: column; 
-    gap: 8px; 
-    align-items: center; 
-    padding: 10px 0;
+  .logo {
+    height: 60px;
   }
-  .nav-title { font-size: 1.3rem; }
-  .header-center { width: 100%; margin-bottom: 20px; text-align: center; }
+
+  nav ul {
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 /*style voor 3 paginas voor juridische*/

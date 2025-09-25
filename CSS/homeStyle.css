@@ -346,10 +346,7 @@ hr {
 /* Responsive */
 @media (max-width: 880px) {
   .header-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 12px;
+    display: block;
   }
 
   .logo {
@@ -358,9 +355,9 @@ hr {
   }
 
   .nav-title {
-    font-size: 1.5rem;
-    margin: 10px 0;
-  }
+    /* font-size: 1.5rem; */
+    margin: 0px 0px;
+  } 
 
   nav ul {
     justify-content: center;
@@ -375,13 +372,8 @@ hr {
   }
 
   nav ul {
-    flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
-
-  .nav-title {
-    font-size: 1.3rem;
   }
 }
 
