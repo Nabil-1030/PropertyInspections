@@ -49,18 +49,26 @@ header {
   border-radius: 13px;
 }
 
-.header-center { flex: 1; text-align: center; z-index: 2; }
-.nav-title { margin-left: 170px; font-size: 1.8rem; font-weight:700; color:#000; white-space: nowrap; }
 
+
+.header-center { flex: 1; text-align: center; z-index: 2; }
+.nav-title {
+  font-size: 2.6rem;
+  font-weight: 850;
+  color: #000;
+  white-space: nowrap;
+  margin: 0; /* geen vaste marges */
+  margin-left: 20%;
+}
 nav { flex-shrink: 0; position: relative; z-index: 2; }
 nav ul {
-  display:flex;
-  gap:14px;
-  list-style:none;
-  padding:0;
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  padding-top: 20px;
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: bolder;
-  font-size: 17px;
+  font-size: 22px;
 }
 nav a {
   text-decoration:none;
@@ -155,8 +163,9 @@ form button {
   border-radius: var(--radius);
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-  margin-left: 35%;
-  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 form button:hover {
@@ -197,8 +206,7 @@ hr {
 .site-footer {
   background-color: var(--beige);
   color: var(--text);
-  padding: 40px 20px 20px;
-  margin-top: 50px;
+  padding: 0px 10px 10px 10px;
 }
 
 .footer-inner {
@@ -329,6 +337,8 @@ hr {
     flex-wrap: wrap;
     gap: 12px;
   }
+
+
 }
 
 @media (max-width: 480px) {
