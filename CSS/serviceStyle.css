@@ -92,6 +92,7 @@ hr {
   margin: 24px 0; 
   border-radius: 3px;
 }
+main { padding: 36px 20px 72px; }
 
 main section h2 {
   font-size: 2rem;
@@ -333,7 +334,7 @@ main section > p {
 .footer-small {
   font-size: 0.9rem;
   color: var(--text-light);
-  margin-bottom: 6px;
+  /* margin-bottom: 6px; */
 }
 
 .footer-small a {
@@ -370,13 +371,14 @@ main section > p {
 
 .footer-bottom {
   border-top: 1px solid rgba(0,0,0,0.2);
-  padding-top: 15px;
+  
   text-align: center;
 }
 
 .footer-bottom p {
   font-size: 0.85rem;
   color: var(--accent-2) ;
+  margin: 3px 0px 0px 0px;
 }
 
 .lang-switch {

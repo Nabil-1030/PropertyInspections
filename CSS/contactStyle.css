@@ -281,13 +281,13 @@ hr {
 
 .footer-bottom {
   border-top: 1px solid rgba(0,0,0,0.2);
-  padding-top: 15px;
   text-align: center;
 }
 
 .footer-bottom p {
   font-size: 0.85rem;
   color: var(--accent-2) ;
+  margin: 3px 0px 0px 0px;
 }
 
 .lang-switch {
