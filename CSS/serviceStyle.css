@@ -51,7 +51,7 @@ header {
 .header-center { 
   flex: 1; 
   text-align: center; 
-  margin-left: 180px;
+
 }
 
 .nav-title {
@@ -59,7 +59,7 @@ header {
   font-weight: 850;
   color: #000;
   white-space: nowrap;
-  margin: 0; /* geen vaste marges */
+  margin-left: 20%; /* geen vaste marges */
 }
 
 nav ul {
@@ -464,16 +464,10 @@ main section > p {
   color: var(--accent-2);
 }
 
-
-/* =======================================
-   📱 Responsive breakpoints
-   ======================================= */
-
 /* Tablet & kleine laptops */
 @media (max-width: 880px) {
   .header-container {
     display: block;
-    text-align: center;
   }
 
   .logo {
@@ -482,13 +476,13 @@ main section > p {
   }
 
   .nav-title {
-    font-size: 1.6rem;
-    margin: 5px 0 10px;
+    width: 100%;
+    align-items: center;
+    display: flex;
   } 
 
   nav ul {
     justify-content: center;
-    flex-wrap: wrap;
     gap: 12px;
   }
 
@@ -515,27 +509,12 @@ main section > p {
 @media (max-width: 480px) {
   .logo {
     height: 60px;
-    margin-bottom: 8px;
   }
 
-  .nav-title {
-    font-size: 1.4rem;
-  }
-
-  nav ul {
-    flex-direction: column;
+  nav ul { 
     align-items: center;
     gap: 10px;
-    padding-top: 10px;
-  }
-
-  nav a {
-    font-size: 1rem;
-    padding: 6px 10px;
-  }
-
-  main section h2 {
-    font-size: 1.6rem;
+    
   }
 
   .services-grid {
