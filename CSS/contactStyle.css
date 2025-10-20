@@ -371,7 +371,7 @@ hr {
   color: var(--accent-2);
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
   .header-container {
     display: block;
   }
@@ -394,9 +394,13 @@ hr {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .logo {
     height: 60px;
+  }
+
+  .nav-title{
+    font-size: 1.6rem;
   }
 
   nav ul {

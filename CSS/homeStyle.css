@@ -405,7 +405,7 @@ hr {
 
 
 /* Responsive */
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
   .header-container {
     display: block;
   }
@@ -428,9 +428,13 @@ width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .logo {
     height: 60px;
+  }
+
+  .nav-title{
+    font-size: 1.6rem;
   }
 
   nav ul {
