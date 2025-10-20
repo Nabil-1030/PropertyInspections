@@ -334,7 +334,7 @@ main section > p {
 .footer-small {
   font-size: 0.9rem;
   color: var(--text-light);
-  /* margin-bottom: 6px; */
+  margin-bottom: 15px;
 }
 
 .footer-small a {
