@@ -465,9 +465,15 @@ main section > p {
 }
 
 
+/* =======================================
+   📱 Responsive breakpoints
+   ======================================= */
+
+/* Tablet & kleine laptops */
 @media (max-width: 880px) {
   .header-container {
     display: block;
+    text-align: center;
   }
 
   .logo {
@@ -476,24 +482,97 @@ main section > p {
   }
 
   .nav-title {
-    font-size: 1.5rem;
-    margin: 0px 0px;
-   } 
+    font-size: 1.6rem;
+    margin: 5px 0 10px;
+  } 
 
   nav ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
   }
+
+  main {
+    padding: 28px 16px 60px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .payment-info,
+  .extra-info {
+    margin: 20px 16px;
+  }
 }
 
+/* Mobiele telefoons */
 @media (max-width: 480px) {
   .logo {
     height: 60px;
+    margin-bottom: 8px;
+  }
+
+  .nav-title {
+    font-size: 1.4rem;
   }
 
   nav ul {
+    flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding-top: 10px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  main section h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 16px;
+  }
+
+  .price {
+    font-size: 0.95rem;
+    padding: 5px 10px;
+  }
+
+  .payment-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .payment-info p,
+  .extra-info {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-col h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
   }
 }
+
