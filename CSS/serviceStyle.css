@@ -50,7 +50,9 @@ header {
 
 .header-center { 
   flex: 1; 
+  display: flex; 
   text-align: center; 
+  z-index: 2;
 
 }
 
@@ -58,8 +60,9 @@ header {
   font-size: 2.6rem;
   font-weight: 850;
   color: #000;
-  white-space: nowrap;
-  margin-left: 20%; /* geen vaste marges */
+  margin-left: 20%;
+  width: 100%;
+ 
 }
 
 nav ul {
@@ -158,6 +161,8 @@ main section > p {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  
 }
 
 /* Desktop: 3 per rij */
@@ -479,11 +484,15 @@ main section > p {
     width: 100%;
     align-items: center;
     display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
   } 
 
   nav ul {
     justify-content: center;
     gap: 12px;
+    padding: 10px 0px;
   }
 
   main {
@@ -513,6 +522,10 @@ main section > p {
 
   .nav-title{
     font-size: 1.6rem;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
   }
 
   nav ul { 

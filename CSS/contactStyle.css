@@ -51,16 +51,22 @@ header {
 
 
 
-.header-center {display: flex; text-align: center; z-index: 2; }
+.header-center {
+  flex: 1;
+  display: flex; 
+  text-align: center; 
+  z-index: 2;
+ }
+
 .nav-title {
   font-size: 2.6rem;
   font-weight: 850;
   color: #000;
-  white-space: nowrap;
-  margin: 0; 
-  margin-left: 20%;/* geen vaste marges */
+  margin-left: 30%;
+  width: 100%;
+ 
 }
-nav { flex-shrink: 0; position: relative; z-index: 2; margin-top: 10px;}
+nav { flex-shrink: 0; position: relative; z-index: 2;}
 nav ul {
   display: flex;
   gap: 14px;
@@ -384,12 +390,15 @@ hr {
   .nav-title {
     
     width: 100%;
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
    } 
 
   nav ul {
     justify-content: center;
-    margin-top: 0px;
+    margin: 10px 0px;
+    padding: 0px;
     gap: 12px;
   }
 }
