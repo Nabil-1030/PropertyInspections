@@ -417,14 +417,16 @@ hr {
 
   .nav-title {
 width: 100%;
-    margin-bottom: 0px;
+    margin: 0px;
    } 
 
   nav ul {
     justify-content: center;
     gap: 12px;
-    margin-top: 0px;
+    margin: 0px;
     padding: 0px;
+    padding-top: 15px;
+
   }
 }
 

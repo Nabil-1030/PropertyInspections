@@ -489,6 +489,7 @@ main section > p {
     width: 100%;
     align-items: center;
     display: flex;
+    margin: 0px;
   } 
 
   nav ul {
