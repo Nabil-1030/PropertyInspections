@@ -38,7 +38,7 @@ header {
   justify-content: space-between;
   width: 100%;        /* ipv max-width */
   margin: 0;          /* geen auto */
-  padding: 15px 30px; /* meer ademruimte binnenin */
+  padding: 15px 20px; /* meer ademruimte binnenin */
 
 }
 
@@ -62,9 +62,18 @@ header {
   font-size: 2.6rem;
   font-weight: 850;
   color: #000;
+<<<<<<< HEAD
   margin-left: 30%;
   width: 100%;
  
+=======
+  white-space: nowrap;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin: 0; 
+  margin-left: 20%;/* geen vaste marges */
+>>>>>>> 55a33f89a69e605a0c3254e6cb0f215df14ac6aa
 }
 nav { flex-shrink: 0; position: relative; z-index: 2;}
 nav ul {
@@ -390,9 +399,13 @@ hr {
   .nav-title {
     
     width: 100%;
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     margin: 0px;
+=======
+    margin: 0px
+>>>>>>> 55a33f89a69e605a0c3254e6cb0f215df14ac6aa
    } 
 
   nav ul {
@@ -400,6 +413,8 @@ hr {
     margin: 10px 0px;
     padding: 0px;
     gap: 12px;
+    padding: 0px;
+    padding-top: 20px;
   }
 }
 
