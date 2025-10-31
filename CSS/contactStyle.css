@@ -62,18 +62,12 @@ header {
   font-size: 2.6rem;
   font-weight: 850;
   color: #000;
-<<<<<<< HEAD
-  margin-left: 30%;
-  width: 100%;
- 
-=======
   white-space: nowrap;
   justify-content: center;
   display: flex;
   width: 100%;
   margin: 0; 
   margin-left: 20%;/* geen vaste marges */
->>>>>>> 55a33f89a69e605a0c3254e6cb0f215df14ac6aa
 }
 nav { flex-shrink: 0; position: relative; z-index: 2;}
 nav ul {
@@ -399,13 +393,7 @@ hr {
   .nav-title {
     
     width: 100%;
-<<<<<<< HEAD
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-=======
     margin: 0px
->>>>>>> 55a33f89a69e605a0c3254e6cb0f215df14ac6aa
    } 
 
   nav ul {

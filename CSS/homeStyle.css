@@ -59,14 +59,9 @@ header {
   font-weight: 850;
   color: #000;
   width: 100%;
-<<<<<<< HEAD
-  margin-left: 30%;
- 
-=======
   display: flex;
   justify-content: center;
   margin-left: 20%;
->>>>>>> 55a33f89a69e605a0c3254e6cb0f215df14ac6aa
 }
 
 /* Nav rechts */
@@ -420,15 +415,8 @@ hr {
   }
 
   .nav-title {
-<<<<<<< HEAD
-    width: 100%;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-=======
 width: 100%;
     margin: 0px;
->>>>>>> 55a33f89a69e605a0c3254e6cb0f215df14ac6aa
    } 
 
   nav ul {
