@@ -486,7 +486,7 @@ main section > p {
 
   .logo {
     height: 70px;
-    margin-bottom: 10px;
+    
   }
 
   .nav-title {
@@ -500,6 +500,9 @@ main section > p {
     justify-content: center;
     gap: 12px;
     padding: 10px 0px;
+  }
+  nav{
+    margin: 0px;
   }
 
   main {

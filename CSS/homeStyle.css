@@ -411,7 +411,7 @@ hr {
 
   .logo {
     height: 70px;
-    margin-bottom: 10px;
+    
   }
 
   .nav-title {
@@ -424,7 +424,7 @@ width: 100%;
     gap: 12px;
     margin: 0px;
     padding: 0px;
-    padding-top: 15px;
+    padding-top: 10px;
 
   }
 
@@ -452,6 +452,8 @@ width: 100%;
     gap: 10px;
   }
 }
+
+
 
 
 
