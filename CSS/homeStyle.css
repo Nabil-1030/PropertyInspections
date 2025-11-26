@@ -52,22 +52,7 @@ header {
   justify-self: start;
 }
 
-<<<<<<< HEAD
-header h1{
-  width: 100%;
-    text-align: center;
-    display: block; 
-    margin: 0 auto;
-}
-
-/* Titel netjes centreren */
-.header-center {
-  text-align: center;
-  z-index: 2;
-}
-=======
 /* Titel exact gecentreerd */
->>>>>>> b1df4c885b8709aa2cb1c9bf310a4766e69d62a9
 .nav-title {
   font-size: 1.9rem;
   font-weight: 850;
