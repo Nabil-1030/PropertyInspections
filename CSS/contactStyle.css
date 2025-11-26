@@ -302,30 +302,27 @@ hr {
 
 /* RESPONSIVE */
 @media (max-width: 1000px) {
-  .header-container {
-    display: block;
-    text-align: center;
-    padding-top: 90px;
-  }
-
-  .header-center {
-    top: 15px;
-  }
-
-  .logo {
-    height: 70px;
-    position: absolute;
-    left: 20px;
-    top: 15px;
-  }
-
-  nav ul {
-    justify-content: center;
-    margin-top: 15px;
-  }
+  .header-container { display: block; }
+  .logo { height: 70px; }
+  .nav-title { width: 100%; align-items: center; display: flex; margin: 0px; } 
+  nav ul { justify-content: center; gap: 12px; padding: 40px; }
+  main { padding: 28px 16px 60px; }
 }
 
 @media (max-width: 520px) {
   .logo { height: 60px; }
-  .nav-title { font-size: 1.6rem; }
+  .nav-title { font-size: 1.6rem; justify-content: center; }
+  nav ul { gap: 10px; }
+  .footer-inner { grid-template-columns: 1fr; gap: 20px; }
+  .footer-col h4 { font-size: 1.1rem; }
+  .footer-bottom p { font-size: 0.8rem; }
+}
+
+/* Tablet & Desktop Services grid adjustments */
+@media (min-width: 768px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  .services-grid > :last-child:nth-child(3n+1) { grid-column: 2; }
 }
