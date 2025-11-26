@@ -49,6 +49,13 @@ header {
   
 }
 
+header h1{
+  width: 100%;
+    text-align: center;
+    display: block; 
+    margin: 0 auto;
+}
+
 /* Titel netjes centreren */
 .header-center {
   text-align: center;
