@@ -314,6 +314,7 @@ main section > p {
   .payment-info h3{
     border-radius: 30px;
     padding-bottom: 15px;
+    border-top: none;
   }
   .header-container { display: block; }
   .logo { height: 70px; }
