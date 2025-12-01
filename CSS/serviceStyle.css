@@ -221,11 +221,14 @@ main section > p {
 
 .payment-info h3{
   color: #0b4f91;
-  justify-content: center;
-  display: flex;
-  align-items: center;
   font-size: 1.5rem;
-  text-decoration: underline;
+  border-bottom: solid 4px #0b4f91;
+  border-radius: 90%;
+  padding-left: 10px; 
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   
 }
 
