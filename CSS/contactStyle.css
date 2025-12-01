@@ -38,7 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  padding: 15px 20px;
+  padding: 10px 20px;
   position: relative;
 }
 
@@ -64,6 +64,7 @@ header {
   font-size: 1.9rem;
   font-weight: 850;
   margin: 0;
+  padding: 0;
   color: black;
   text-align: center;
   width: 100%;
@@ -77,7 +78,7 @@ nav ul {
   display: flex;
   gap: 14px;
   list-style: none;
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: bolder;
   font-size: 22px;

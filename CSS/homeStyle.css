@@ -74,7 +74,7 @@ nav ul {
   display: flex;
   gap: 14px;
   list-style: none;
-  padding-top: 20px;
+  padding-top: 30px;
   font-family: 'Trebuchet MS', sans-serif;
   font-weight: bolder;
   font-size: 22px;
@@ -289,8 +289,14 @@ hr {
   .header-container { display: block; }
   .logo { height: 70px; }
   .nav-title { width: 100%; align-items: center; display: flex; margin: 0px; } 
-  nav ul { justify-content: center; gap: 12px; padding: 20px ; 
+  nav ul { justify-content: center; gap: 12px; padding: 20px ;} 
   main { padding: 28px 16px 60px; }
+  .titleh1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 520px) {
@@ -302,5 +308,3 @@ hr {
   .footer-bottom p { font-size: 0.8rem; }
 }
 
-
-}
