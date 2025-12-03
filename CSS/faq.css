@@ -42,6 +42,13 @@
     margin: 0 auto;
     padding: 0 20px;
   }
+  hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-2), transparent);
+    margin: 24px 0;
+    border-radius: 3px;
+  }
  
   /* ---------------------------------
      HEADER
@@ -66,7 +73,6 @@
   .logo img {
     height: 100px;
     border-radius: 10px;
-    
     
   }
   
@@ -202,6 +208,11 @@
     color: var(--text);
     padding: 20px 10px 10px;
   }
+  footer a{
+    color: #0b4f91;
+    text-decoration: none;
+    
+  }
   
   .footer-inner {
     display: grid;
@@ -224,13 +235,16 @@
   .footer-links ul,
   .footer-legal ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
+    color: #0b4f91;
   }
+
+  
   
   .footer-links a,
   .footer-legal a {
-    color: var(--accent-2);
+    color:#0b4f91;
     text-decoration: none;
     font-weight: 600;
   }
