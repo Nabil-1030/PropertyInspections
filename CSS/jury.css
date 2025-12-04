@@ -27,15 +27,99 @@ body {
 }
 
 /* Header (gedeeld door home & juridisch) */
-header { position: relative; background: var(--beige); border-bottom:1px solid var(--hr);}
-.header-container { display:flex; align-items:center; justify-content:space-between; width:100%; padding:20px 20px 10px 20px; }
-.logo { height:90px; width:auto; border-radius:13px; }
-.header-center { flex:1; display:flex; justify-content:center; text-align:center; z-index:2; }
-.nav-title { font-size:1.9rem; font-weight:850; color:#000; width:100%; display:flex; justify-content:center; margin-left:15%; }
-nav { flex-shrink:0; position:relative; z-index:2; margin-top:10px; }
-nav ul { display:flex; gap:14px; list-style:none; padding-top:20px; font-family:'Trebuchet MS',sans-serif; font-weight:bolder; font-size:22px;}
-nav a { text-decoration:none; color: var(--accent-2); padding:8px 12px; border-radius: var(--radius); transition:0.16s; }
-nav a:hover { background: rgba(15,111,191,0.08); color: var(--accent);; transform:translateY(-1px); }
+header {
+  background: var(--beige);
+  border-bottom: 1px solid var(--hr);
+  position: relative;
+}
+
+/* Professionele 3-koloms header – FAQ stijl */
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+/* Logo links */
+.logo {
+  height: 90px;
+  width: auto;
+  border-radius: 13px;
+  justify-self: start;
+}
+
+/* Titel exact gecentreerd */
+/* .nav-title {
+  font-size: 1.9rem;
+  font-weight: 850;
+  color: #000;
+  text-align: center;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+} */
+
+/* NAV – FAQ stijl */
+nav {
+  justify-self: end;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;         
+  list-style: none;
+  padding-top: 20px;  
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 18px;  
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent-2);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.16s;
+}
+
+nav a:hover {
+  background: rgba(15,111,191,0.08);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+nav a.active {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+/* Taal switch rechtsboven */
+.lang-switch {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: var(--accent-2);
+  margin: 0 6px;
+  transition: color 0.2s ease;
+}
+
+.lang-switch a:hover { color: var(--accent); }
+.lang-switch .active { text-decoration: underline; color: var(--accent); }
+
 
 /* Divider */
 hr { border:none; height:3px; background: linear-gradient(90deg,transparent,var(--accent-2),transparent); margin:24px 0; border-radius:3px; }

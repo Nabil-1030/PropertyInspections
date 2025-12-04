@@ -28,38 +28,30 @@ body {
 
 /* Header */
 header {
-  position: relative;
   background: var(--beige);
   border-bottom: 1px solid var(--hr);
+  position: relative;
 }
 
+/* Professionele 3-koloms header – FAQ stijl */
 .header-container {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;  /* logo | titel | nav */
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   width: 100%;
   padding: 10px 20px;
 }
 
+/* Logo links */
 .logo {
   height: 90px;
   width: auto;
   border-radius: 13px;
+  justify-self: start;
 }
 
-.header-center { 
-  flex: 1; 
-  display: flex; 
-  justify-content: center; 
-  z-index: 2;
-}
-
-nav {
-  justify-self: end;
-  z-index: 2;
-}
-
-.nav-title {
+/* Titel exact gecentreerd */
+/* .nav-title {
   font-size: 1.9rem;
   font-weight: 850;
   color: #000;
@@ -68,30 +60,66 @@ nav {
   margin: 0;
   padding: 0;
   width: 100%;
+} */
+
+/* NAV – FAQ stijl */
+nav {
+  justify-self: end;
+  z-index: 2;
 }
 
 nav ul {
   display: flex;
-  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;         
   list-style: none;
-  padding-top: 20px;
+  padding-top: 20px;  
+  margin: 0;
   font-family: 'Trebuchet MS', sans-serif;
-  font-weight: bolder;
-  font-size: 22px;
+  font-weight: bold;
+  font-size: 18px;  
 }
 
-nav a { 
-  text-decoration:none; 
-  color: var(--accent-2); 
-  padding:8px 12px; 
-  border-radius:8px; 
-  transition:0.16s; 
+nav a {
+  text-decoration: none;
+  color: var(--accent-2);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: 0.16s;
 }
-nav a:hover { 
-  background: rgba(15,111,191,0.08); 
+
+nav a:hover {
+  background: rgba(15,111,191,0.08);
   color: var(--accent);
-  transform: translateY(-1px); 
+  transform: translateY(-1px);
 }
+
+nav a.active {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+/* Taal switch rechtsboven */
+.lang-switch {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.lang-switch a {
+  text-decoration: none;
+  color: var(--accent-2);
+  margin: 0 6px;
+  transition: color 0.2s ease;
+}
+
+.lang-switch a:hover { color: var(--accent); }
+.lang-switch .active { text-decoration: underline; color: var(--accent); }
+
 
 /* Headings & divider */
 hr { 
