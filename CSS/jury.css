@@ -178,8 +178,8 @@ main { padding:36px 20px 72px; }
   .logo { height:70px; }
   .nav-title { width:100%; display:flex; align-items:center; margin:0; justify-content:center; }
   nav ul { justify-content:center; gap:12px; padding:10px 0; }
-  main { padding:28px 16px 60px; }
-  .legal-page { padding:20px 16px 40px; }
+  main {  padding:28px 16px 60px; }
+  .legal-page {margin: 30px; padding:20px 16px 40px; }
 }
 @media (max-width:520px){
   .logo { height:60px; }
