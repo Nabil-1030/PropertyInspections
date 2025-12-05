@@ -277,11 +277,60 @@ hr {
    RESPONSIVE
 ---------------------------------- */
 @media (max-width: 1000px) {
-  .header-container { display: flex; flex-direction: column; align-items: center; }
-  .logo img { height: 70px; }
-  nav ul { justify-content: center; gap: 12px; padding: 10px 0 0 0; }
-  main { padding: 28px 16px 60px; }
+
+  /* Header: stacked layout */
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  /* Logo links boven */
+  .logo {
+    align-self: flex-start;
+  
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  /* Taal switch blijft rechtsboven */
+  .lang-switch {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+  /* NAV blijft perfect in het midden */
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+  }
+
+  main { 
+    padding: 28px 16px 60px; 
+  }
+
+  hr {
+    margin: 25px 0px 10px 0px;
+  }
 }
+
 
 @media (max-width: 520px) {
   .logo img { height: 60px; }
