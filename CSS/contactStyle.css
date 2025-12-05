@@ -309,7 +309,7 @@ hr {
   .header-container { display: block; }
   .logo { height: 70px; }
   .nav-title { width: 100%; align-items: center; display: flex; margin: 0px; } 
-  nav ul { justify-content: center; gap: 12px; padding: 40px; }
+  nav ul { display: flex; justify-content: center; align-items: center; gap: 12px; padding: 20px; }
   main { padding: 28px 16px 60px; }
 }
 
