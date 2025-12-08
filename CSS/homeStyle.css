@@ -4,8 +4,8 @@
   --text-light: #4b5563;
   --black: #000000;
   --muted: #6b7280; 
-  --accent: #767d16e4;
-  --accent-2: #0f1010;
+  --accent: #3b2813ca;
+  --accent-2: #3b2813ca;
   --hr: #e6eefc;
   --shadow: 0 6px 20px rgba(15,111,191,0.08);
   --radius-lg: 14px;
@@ -74,7 +74,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: var(--accent-2);
+  color: black;
   padding: 6px 10px;
   border-radius: 6px;
   transition: 0.16s;
@@ -103,7 +103,7 @@ nav a.active {
 
 .lang-switch a {
   text-decoration: none;
-  color: var(--accent-2);
+  color: black;
   margin: 0 6px;
   transition: color 0.2s ease;
 }
@@ -274,13 +274,13 @@ hr {
 
 .footer-links a,
 .footer-legal a {
-  color: #767d16e4;
+  color: #3b2813ca;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover,
-.footer-legal a:hover { color: black; }
+.footer-legal a:hover { color: rgb(40, 25, 16); }
 
 .footer-bottom {
   border-top: 1px solid rgba(0,0,0,0.2);

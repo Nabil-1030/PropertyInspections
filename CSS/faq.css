@@ -4,8 +4,8 @@
   --text-light: #4b5563;
   --black: #000000;
   --muted: #6b7280; 
-  --accent: #767d16e4;
-  --accent-2: #0f1010;
+ --accent: #3b2813ca;
+  --accent-2: black;
   --hr: #e6eefc;
   --shadow: 0 6px 20px rgba(15,111,191,0.08);
   --radius-lg: 14px;
@@ -242,7 +242,7 @@ hr {
 }
 
 .footer-small a {
-  color: var(--accent-2);
+  color: #3b2813ca;
   font-weight: bold;
 }
 
@@ -256,7 +256,7 @@ hr {
 
 .footer-links a,
 .footer-legal a {
-  color: #767d16e4;
+  color: #3b2813ca;
   text-decoration: none;
   transition: color 0.3s;
 }
