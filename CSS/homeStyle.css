@@ -4,8 +4,8 @@
   --text-light: #4b5563;
   --black: #000000;
   --muted: #6b7280; 
-  --accent: #0f6fbf;
-  --accent-2: #0b4f91;
+  --accent: #767d16e4;
+  --accent-2: #0f1010;
   --hr: #e6eefc;
   --shadow: 0 6px 20px rgba(15,111,191,0.08);
   --radius-lg: 14px;
@@ -120,6 +120,7 @@ nav a.active {
 main {
   padding: 36px 20px 72px;
 }
+
 
 section {
   background: rgba(255,255,255,0.85);
@@ -273,13 +274,13 @@ hr {
 
 .footer-links a,
 .footer-legal a {
-  color: var(--accent-2);
+  color: #767d16e4;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover,
-.footer-legal a:hover { color: var(--accent); }
+.footer-legal a:hover { color: black; }
 
 .footer-bottom {
   border-top: 1px solid rgba(0,0,0,0.2);

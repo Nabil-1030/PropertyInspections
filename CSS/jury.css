@@ -3,9 +3,9 @@
   --text: #1f2937;
   --text-light: #4b5563;
   --black: #000000;
-  --muted: #6b7280;
-  --accent: #0f6fbf;
-  --accent-2: #0b4f91;
+  --muted: #6b7280; 
+  --accent: #767d16e4;
+  --accent-2: #0f1010;
   --highlight: #20b2aa;
   --hr: #e6eefc;
   --shadow: 0 6px 20px rgba(15,111,191,0.08);
@@ -161,8 +161,8 @@ main { padding:36px 20px 72px; }
 .footer-small a { text-decoration:none; color: var(--accent-2); transition:0.16s; font-weight:bold; }
 .footer-links ul, .footer-legal ul { list-style:none; font-weight:bold; margin-left:0; padding-left:0; }
 .footer-links li, .footer-legal li { margin-bottom:8px; }
-.footer-links a, .footer-legal a { color: var(--accent-2); text-decoration:none; transition:color 0.3s; }
-.footer-links a:hover, .footer-legal a:hover { color: var(--accent); }
+.footer-links a, .footer-legal a { color: #767d16e4; text-decoration:none; transition:color 0.3s; }
+.footer-links a:hover, .footer-legal a:hover { color: black; }
 .footer-bottom { border-top:1px solid rgba(0,0,0,0.2); text-align:center; }
 .footer-bottom p { font-size:0.85rem; color: var(--accent-2); margin:3px 0 0 0; }
 
