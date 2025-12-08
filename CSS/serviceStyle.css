@@ -158,6 +158,9 @@ main section > p {
   color: var(--muted);
   line-height: 1.6;
 }
+.title-service{
+  color: black;
+}
 
 /* Services grid */
 .services-grid {

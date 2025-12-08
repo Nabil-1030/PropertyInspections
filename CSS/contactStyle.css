@@ -135,10 +135,11 @@ section {
 .titleh1 {
   display: flex;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   color: black;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  
   
 }
 

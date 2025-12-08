@@ -122,6 +122,7 @@ h1 {
   margin-bottom: 10px;
   font-weight: 800;
   color: var(--black);
+  padding-bottom: 10px;
 }
 
 .intro {
@@ -130,6 +131,7 @@ h1 {
   margin: 0 auto 40px;
   color: var(--text-light);
   font-size: 1.05rem;
+  padding-bottom: 20px;
 }
 
 h2 {
