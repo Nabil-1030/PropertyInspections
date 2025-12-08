@@ -121,7 +121,7 @@ nav a.active {
 
 
 /* MAIN */
-main { padding: 36px 20px 72px; }
+main { padding: 10px 20px 72px; }
 
 section {
   background: rgba(255,255,255,0.85);
@@ -130,6 +130,16 @@ section {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   border: 1px solid rgba(11,79,145,0.04);
+}
+
+.titleh1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: black;
+  align-items: center;
+  padding-bottom: 20px;
+  
 }
 
 h2 {
@@ -311,10 +321,16 @@ hr {
   .nav-title { width: 100%; align-items: center; display: flex; margin: 0px; } 
   nav ul { display: flex; justify-content: center; align-items: center; gap: 12px; padding: 20px; }
   main { padding: 28px 16px 60px; }
+  
 }
 
 @media (max-width: 520px) {
   .logo { height: 60px; }
+  .titleh1{
+    text-align: center;
+    font-size: 1.0rem;
+
+  }
   .nav-title { font-size: 1.6rem; justify-content: center; }
   nav ul { gap: 10px; }
   .footer-inner { grid-template-columns: 1fr; gap: 20px; }

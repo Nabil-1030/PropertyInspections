@@ -321,6 +321,10 @@ hr {
     justify-content: center;
     align-items: center;
   }
+  .h2Title{
+    font-size: 1.1rem;
+    
+  }
 }
 
 @media (max-width: 520px) {
