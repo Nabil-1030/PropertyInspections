@@ -123,6 +123,34 @@ nav a.active {
 /* MAIN */
 main { padding: 10px 20px 72px; }
 
+.contact-intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.contact-urgent {
+  font-size: 1.1rem;
+  background-color: lightgoldenrodyellow; /* lichte blauwe achtergrond */
+  padding: 15px 20px;
+  border-left: 5px solid #003366;
+  color: #003366;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.contact-urgent a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-urgent a:hover {
+  text-decoration: underline;
+}
+
+
 section {
   background: rgba(255,255,255,0.85);
   margin-bottom: 28px;
