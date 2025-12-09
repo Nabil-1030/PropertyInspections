@@ -136,7 +136,7 @@ section {
 .titleh1 {
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   color: black;
   margin-top: 0;
 }
@@ -152,7 +152,7 @@ h2 {
 }
 
 .h2Title {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 20px;
   color: #222;
