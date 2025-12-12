@@ -132,16 +132,16 @@ main { padding: 10px 20px 72px; }
 
 .contact-urgent {
   font-size: 1.1rem;
-  background-color: lightgoldenrodyellow; /* lichte blauwe achtergrond */
+  background-color: white;
   padding: 15px 20px;
-  border-left: 5px solid #003366;
-  color: #003366;
+  border-left: 5px solid #3b2813ca;
+  color: brown;
   font-weight: 500;
   border-radius: 5px;
 }
 
 .contact-urgent a {
-  color:var(--accent-2);
+  color:black;
   text-decoration: none;
   font-weight: bold;
 }
