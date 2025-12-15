@@ -141,7 +141,7 @@ main { padding: 10px 20px 72px; }
 }
 
 .contact-urgent a {
-  color:black;
+  color:rgba(80, 29, 19, 0.975);
   text-decoration: none;
   font-weight: bold;
 }
