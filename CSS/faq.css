@@ -138,9 +138,11 @@ h2 {
   margin: 40px 0 20px;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--accent);
+  color: black;
   border-left: 6px solid var(--accent);
   padding-left: 12px;
+
+
 }
 
 /* FAQ ACCORDIONS */
