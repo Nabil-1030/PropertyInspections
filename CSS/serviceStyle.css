@@ -50,18 +50,6 @@ header {
   justify-self: start;
 }
 
-/* Titel exact gecentreerd */
-/* .nav-title {
-  font-size: 1.9rem;
-  font-weight: 850;
-  color: #000;
-  text-align: center;
-  justify-self: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-} */
-
 /* NAV – FAQ stijl */
 nav {
   justify-self: end;

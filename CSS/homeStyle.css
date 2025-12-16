@@ -16,14 +16,17 @@
 
 /* Base */
 * { box-sizing: border-box; }
-html, body { height: 100%; margin:0; }
+html, body { height: 100%; margin:0 ; }
 body {
   font-family: var(--font-sans);
   background: var(--beige);
   color: var(--text);
   line-height: 1.55;
   font-size: 16px;
+  
 }
+
+
 
 /* ---------------------------------
    HEADER
@@ -33,6 +36,8 @@ header {
   background: var(--beige);
   border-bottom: 1px solid var(--hr);
   position: relative;
+  
+  
 }
 
 /* Professionele 3-koloms header – FAQ stijl */
