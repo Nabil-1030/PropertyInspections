@@ -43,6 +43,7 @@ header {
   align-items: center;
   width: 100%;
   padding: 10px 20px;
+  
 }
 
 /* Logo links */
@@ -121,6 +122,13 @@ nav a.active {
 
 main {
   padding: 36px 20px 72px;
+  background-image: url(/IMAGES/background_header.png);
+  background-size: cover;
+  margin: auto 10px;
+  border-radius: 20px;
+
+  
+ 
 }
 
 
@@ -214,7 +222,7 @@ hr {
   border: none;
   height: 3px;
   background: linear-gradient(90deg, transparent, var(--accent-2), transparent);
-  margin: 24px 0;
+  margin: 20px auto 30px;
   border-radius: 3px;
 }
 
