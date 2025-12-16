@@ -106,7 +106,7 @@ nav a.active {
 }
 
 .lang-switch a:hover { color: var(--accent); }
-.lang-switch .active { text-decoration: underline; color: var(--accent); }
+.lang-switch .active { text-decoration: underline;  }
 
 
 /* Headings & divider */

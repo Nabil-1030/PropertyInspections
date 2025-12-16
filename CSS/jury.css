@@ -117,7 +117,7 @@ nav a.active {
 }
 
 .lang-switch a:hover { color: var(--accent); }
-.lang-switch .active { text-decoration: underline; color: #3b2813ca; }
+.lang-switch .active { text-decoration: underline; }
 
 
 /* Divider */
