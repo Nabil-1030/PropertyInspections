@@ -79,13 +79,13 @@ nav a {
 
 nav a:hover {
   background: rgba(15,111,191,0.08);
-  color: var(--accent);
+  
   transform: translateY(-1px);
 }
 
 nav a.active {
   text-decoration: underline;
-  color: var(--accent);
+ 
 }
 
 /* Taal switch rechtsboven */
@@ -265,16 +265,19 @@ main section > p {
 .footer-logo { height: 50px; margin-bottom: 10px; border-radius: 7px; }
 .footer-company-name { font-weight: 700; margin-bottom: 5px; text-decoration: underline; }
 .footer-small { font-size: 0.9rem; color: var(--text-light); margin-bottom: 15px; }
-.footer-small a { text-decoration:none; color: #3b2813ca; transition:0.16s; font-weight: bold; }
+.footer-small a { text-decoration:none; color: black; transition:0.16s; font-weight: bold; }
+.footer-small a:hover {
+  text-decoration: underline;
+}
 
 .footer-links ul,
 .footer-legal ul { list-style: none; margin-left: 0; padding-left: 0; font-weight: bold; }
 .footer-links li,
 .footer-legal li { margin-bottom: 8px; }
 .footer-links a,
-.footer-legal a { color: #3b2813ca; text-decoration: none; transition: color 0.3s; }
+.footer-legal a { color: black; text-decoration: none; transition: color 0.3s; }
 .footer-links a:hover,
-.footer-legal a:hover { color: black; }
+.footer-legal a:hover { color: black; text-decoration: underline;}
 
 .footer-bottom { border-top: 1px solid rgba(0,0,0,0.2); text-align: center; }
 .footer-bottom p { font-size: 0.85rem; color: var(--accent-2); margin: 3px 0; }

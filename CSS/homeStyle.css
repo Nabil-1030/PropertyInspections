@@ -25,9 +25,6 @@ body {
   font-size: 16px;
   
 }
-
-
-
 /* ---------------------------------
    HEADER
 ---------------------------------- */
@@ -36,8 +33,7 @@ header {
   background: var(--beige);
   border-bottom: 1px solid var(--hr);
   position: relative;
-  
-  
+
 }
 
 /* Professionele 3-koloms header – FAQ stijl */
@@ -87,13 +83,14 @@ nav a {
 
 nav a:hover {
   background: rgba(15,111,191,0.08);
-  color: var(--accent);
+  
   transform: translateY(-1px);
 }
 
 nav a.active {
   text-decoration: underline;
-  color: var(--accent);
+  
+ 
 }
 
 /* Taal switch rechtsboven */
@@ -114,7 +111,7 @@ nav a.active {
 }
 
 .lang-switch a:hover { color: var(--accent); }
-.lang-switch .active { text-decoration: underline; color: var(--accent); }
+.lang-switch .active { text-decoration: underline;  }
 
 
 
@@ -265,8 +262,12 @@ hr {
 }
 
 .footer-small a {
-  color: var(--accent-2);
+  color: black;
   font-weight: bold;
+  text-decoration: none;
+}
+.footer-small a:hover{
+  text-decoration: underline;
 }
 
 .footer-links ul,
@@ -279,13 +280,13 @@ hr {
 
 .footer-links a,
 .footer-legal a {
-  color: #3b2813ca;
+  color: black;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover,
-.footer-legal a:hover { color: rgb(40, 25, 16); }
+.footer-legal a:hover { color: black; text-decoration: underline;}
 
 .footer-bottom {
   border-top: 1px solid rgba(0,0,0,0.2);
@@ -294,7 +295,7 @@ hr {
 
 .footer-bottom p {
   font-size: 0.85rem;
-  color: var(--accent-2);
+  color: black;
   margin: 3px 0;
 }
 

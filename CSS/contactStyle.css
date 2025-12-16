@@ -49,18 +49,6 @@ header {
   justify-self: start;
 }
 
-/* Titel exact gecentreerd */
-/* .nav-title {
-  font-size: 1.9rem;
-  font-weight: 850;
-  color: #000;
-  text-align: center;
-  justify-self: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-} */
-
 /* NAV – FAQ stijl */
 nav {
   justify-self: end;
@@ -90,13 +78,12 @@ nav a {
 
 nav a:hover {
   background: rgba(15,111,191,0.08);
-  color: var(--accent);
   transform: translateY(-1px);
 }
 
 nav a.active {
   text-decoration: underline;
-  color: var(--accent);
+
 }
 
 /* Taal switch rechtsboven */
@@ -311,8 +298,13 @@ hr {
 }
 
 .footer-small a {
-  color: var(--accent-2);
+  color: black;
   font-weight: bold;
+  text-decoration: none;
+}
+.footer-small a:hover {
+  text-decoration: underline;
+
 }
 
 .footer-links ul,
@@ -326,7 +318,7 @@ hr {
 
 .footer-links a,
 .footer-legal a {
-  color: #3b2813ca;
+  color: black;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -334,6 +326,7 @@ hr {
 .footer-links a:hover,
 .footer-legal a:hover {
   color:#000000;
+  text-decoration: underline;
 }
 
 .footer-bottom {
