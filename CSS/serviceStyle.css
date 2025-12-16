@@ -106,7 +106,7 @@ nav a.active {
 }
 
 .lang-switch a:hover { color: var(--accent); }
-.lang-switch .active { text-decoration: underline;  }
+.lang-switch .active{ text-decoration: underline; color: black; }
 
 
 /* Headings & divider */
@@ -281,18 +281,6 @@ main section > p {
 
 .footer-bottom { border-top: 1px solid rgba(0,0,0,0.2); text-align: center; }
 .footer-bottom p { font-size: 0.85rem; color: var(--accent-2); margin: 3px 0; }
-
-.lang-switch {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  z-index: 10;
-}
-.lang-switch a { text-decoration: none; color: var(--accent-2); margin: 0 6px; transition: color 0.2s ease; }
-.lang-switch a:hover { color: var(--accent); }
-.lang-switch .active { text-decoration: underline; color: var(--accent); }
 
 /* Juridische pagina’s */
 .legal-page {
