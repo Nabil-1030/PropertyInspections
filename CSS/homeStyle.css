@@ -123,17 +123,15 @@ nav a.active {
 main {
   padding: 36px 20px 72px;
   background-image: url(/IMAGES/background_header.png);
-  background-size: cover;
+  background-size: contain cover;
   margin: auto 10px;
   border-radius: 20px;
 
-  
- 
 }
 
 
 section {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.888);
   margin-bottom: 28px;
   padding: 26px;
   border-radius: var(--radius-lg);
