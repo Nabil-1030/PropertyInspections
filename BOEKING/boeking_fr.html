@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation - Property Inspections</title>
+  <meta name="description" content="Réservez votre état des lieux avec Property Inspections. Complétez le formulaire afin d’organiser une inspection précise et professionnelle.">
+  <link rel="stylesheet" href="/CSS/boeking.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <a href="/HOME/home_fr.html">
+      <img src="/IMAGES/Test_Logo.png" alt="Property Inspections logo" class="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/HOME/home_fr.html">Accueil</a></li> |
+        <li><a href="/INFO/info_fr.html">Info</a></li> |
+        <li><a href="/FAQ/faqFR.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<hr>
+
+<main>
+  <div class="titleh1">
+    <h1>Réservez votre état des lieux</h1>
+  </div>
+
+  <section>
+    <p class="contact-intro">
+      Veuillez compléter soigneusement le formulaire ci-dessous afin de réserver votre état des lieux d’entrée ou de sortie.
+      Toutes les informations sont nécessaires pour une organisation et une facturation correctes.
+    </p>
+
+    <form action="/BOEKING/boeking_fr.html" method="post">
+
+      <!-- PROPRIÉTAIRE & LOCATAIRE -->
+      <div class="owner-tenant-container">
+
+        <!-- LOCATAIRE -->
+        <div class="column huurder">
+          <h3>Coordonnées du locataire</h3>
+
+          <label for="tenant_name">Nom du locataire* :</label>
+          <input type="text" id="tenant_name" name="tenant_name" placeholder="Nom" required>
+
+          <label for="tenant_firstname">Prénom du locataire* :</label>
+          <input type="text" id="tenant_firstname" name="tenant_firstname" placeholder="Prénom" required>
+
+          <label for="tenant_email">Adresse e-mail du locataire* :</label>
+          <input type="email" id="tenant_email" name="tenant_email" placeholder="Email" required>
+
+          <label for="tenant_phone">Téléphone du locataire :</label>
+          <input type="tel" id="tenant_phone" name="tenant_phone" placeholder="+32 ...">
+
+          <label>Adresse du locataire :</label>
+          <input type="text" name="tenant_street" placeholder="Rue et numéro">
+          <input type="text" name="tenant_city" placeholder="Commune">
+          <input type="text" name="tenant_postcode" placeholder="Code postal">
+        </div>
+
+        <!-- PROPRIÉTAIRE -->
+        <div class="column eigenaar">
+          <h3>Coordonnées du propriétaire</h3>
+
+          <label for="owner_name">Nom du propriétaire* :</label>
+          <input type="text" id="owner_name" name="owner_name" placeholder="Nom" required>
+
+          <label for="owner_firstname">Prénom du propriétaire* :</label>
+          <input type="text" id="owner_firstname" name="owner_firstname" placeholder="Prénom" required>
+
+          <label for="owner_email">Adresse e-mail du propriétaire* :</label>
+          <input type="email" id="owner_email" name="owner_email" placeholder="Email" required>
+
+          <label for="owner_phone">Téléphone du propriétaire :</label>
+          <input type="tel" id="owner_phone" name="owner_phone" placeholder="+32 ...">
+
+          <label>Adresse du propriétaire :</label>
+          <input type="text" name="owner_street" placeholder="Rue et numéro">
+          <input type="text" name="owner_city" placeholder="Commune">
+          <input type="text" name="owner_postcode" placeholder="Code postal">
+        </div>
+
+      </div>
+
+      <!-- BIEN IMMOBILIER -->
+      <div class="pandgegevens">
+        <h3>Informations du bien</h3>
+
+        <label for="street">Rue* :</label>
+        <input type="text" id="street" name="street" placeholder="Rue" required>
+
+        <label for="number">Numéro* :</label>
+        <input type="text" id="number" name="number" placeholder="Numéro" required>
+
+        <label for="box">Boîte :</label>
+        <input type="text" id="box" name="box" placeholder="Boîte">
+
+        <label for="postcode">Code postal* :</label>
+        <input type="text" id="postcode" name="postcode" placeholder="Code postal" required>
+
+        <label for="city">Commune* :</label>
+        <input type="text" id="city" name="city" placeholder="Commune" required>
+
+        <label for="property_type">Type de bien* :</label>
+        <select id="property_type" name="property_type" required>
+          <option value="" disabled selected>Choisissez le type de bien...</option>
+          <option value="garage">Garage</option>
+          <option value="studio">Studio</option>
+          <option value="appartement1">Appartement 1 chambre</option>
+          <option value="appartement2">Appartement 2 chambres</option>
+          <option value="appartement3">Appartement 3 chambres</option>
+          <option value="house">Maison</option>
+        </select>
+
+        <label for="furnished">Meublé* :</label>
+        <select id="furnished" name="furnished" required>
+          <option value="" disabled selected>Choisissez...</option>
+          <option value="yes">Oui</option>
+          <option value="no">Non</option>
+        </select>
+
+        <!-- ÉTAT DES LIEUX -->
+        <h3>État des lieux</h3>
+
+        <label for="inspection_type">Type d’état des lieux* :</label>
+        <select id="inspection_type" name="inspection_type" required>
+          <option value="" disabled selected>Choisissez...</option>
+          <option value="entry">Entrée</option>
+          <option value="exit">Sortie</option>
+        </select>
+
+        <label for="date">Date souhaitée* :</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Heure souhaitée:</label>
+        <input type="time" id="time" name="time">
+        
+
+        <label for="message">Informations complémentaires :</label>
+        <textarea id="message" name="message" rows="4" placeholder="Remarques, préférences ou informations utiles..."></textarea>
+
+        <button type="submit" class="submit-btn">
+          Demande de réservation
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <p class="contact-urgent">
+    <strong>Urgent ?</strong> Contactez-nous directement au
+    <a href="tel:+32490396364">+32 490 39 63 64</a>.
+    Nous nous ferons un plaisir de vous aider.
+  </p>
+</main>
+<hr>
+<footer>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Property Inspections — Tous droits réservés.</p>
+    <p class="footer-small">
+      Ce site est la propriété de Property Inspections.
+      Pour toute question juridique :
+      <a href="/HOME/home_fr.html#contact">Contactez-nous</a>.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

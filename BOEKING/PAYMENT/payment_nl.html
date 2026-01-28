@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betaling - Property Inspections</title>
+  <meta name="description" content="Voltooi uw reservatie door het verplichte voorschot van 30% te betalen.">
+  <link rel="stylesheet" href="/CSS/payment.css">
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <!-- <a href="/HOME/home_nl.html"> -->
+      <img src="/IMAGES/Test_Logo.png" alt="Property Inspections logo" class="logo">
+    <!-- </a> -->
+  </div>
+</header>
+
+<hr>
+
+<main class="payment-container">
+
+  <h1>Voltooi uw reservatie</h1>
+
+  <p class="payment-intro">
+    Om uw reservatie definitief te bevestigen, vragen wij een
+    <strong>verplicht voorschot van 30%</strong>.
+    Het resterende bedrag wordt na de inspectie of ter plaatse geregeld.
+  </p>
+
+  <form action="/PAYMENT/payment_confirm_nl.html" method="post">
+
+    <!-- WIE BETAALT -->
+    <section class="payment-section">
+      <h3>Wie betaalt het voorschot?</h3>
+
+      <label class="radio-option">
+        <input type="radio" name="payer" value="eigenaar" required>
+        Eigenaar
+      </label>
+
+      <label class="radio-option">
+        <input type="radio" name="payer" value="huurder">
+        Huurder
+      </label>
+    </section>
+
+    <!-- BETAALMETHODE -->
+    <section class="payment-section">
+      <h3>Kies uw betaalmethode</h3>
+
+      <label class="radio-option">
+        <input type="radio" name="payment_method" value="bancontact" required>
+        <img src="/IMAGES/payments/bancontact.svg" alt="Bancontact">
+        <strong>Bancontact</strong>
+      </label>
+
+      <label class="radio-option">
+        <input type="radio" name="payment_method" value="visa_mastercard">
+        <img src="/IMAGES/payments/visa.svg" alt="Visa">
+        <img src="/IMAGES/payments/mastercard.svg" alt="Mastercard">
+        <strong>Visa / Mastercard</strong>
+      </label>
+
+      <label class="radio-option">
+        <input type="radio" name="payment_method" value="paypal">
+        <img src="/IMAGES/payments/paypal.svg" alt="PayPal">
+        <strong>PayPal</strong>
+      </label>
+
+      <label class="radio-option">
+        <input type="radio" name="payment_method" value="klarna">
+        <img src="/IMAGES/payments/klarna.svg" alt="Klarna">
+        <strong>Klarna</strong> (achteraf betalen)
+      </label>
+
+       <label class="radio-option">
+        <input type="radio" name="payment_method" value="cash">
+        <img src="/IMAGES/payments/cash.svg" alt="Cash">
+        <strong>Cash</strong> -  volledige betaling (100%)
+      </label>
+
+      <div class="payment-note">
+        💡<strong>Cash betaling:</strong><br>
+        Bij keuze voor cash wordt het volledige bedrag (100%)
+        ter plaatse betaald in één geheel.
+        De verdeling van dit bedrag tussen eigenaar en huurder
+        wordt volledig onderling geregeld.
+      </div>
+
+    </section>
+
+    <!-- INFO CASH -->
+    
+
+    <button type="submit" class="submit-btn">
+      Betaal voorschot & bevestig reservatie
+    </button>
+
+  </form>
+
+</main>
+
+<hr>
+
+<footer>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Property Inspections — Alle rechten voorbehouden.</p>
+    <p class="footer-small">Deze website is eigendom van Property Inspections.</p>
+  </div>
+</footer>
+
+</body>
+</html>

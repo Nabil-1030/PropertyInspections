@@ -86,7 +86,7 @@ nav a.active {
 /* MAIN */
 main { max-width: var(--container-max); margin: 0 auto; padding: 30px 20px 80px; }
 
-.titleh1 { text-align: center; font-size: 1.4rem; font-weight: 700; margin-bottom: 30px; }
+.titleh1 { text-align: center; font-size: 1.2rem; font-weight: 700; margin-bottom: 80px; }
 main h1::after {
   content: "";
   display: block;
@@ -182,7 +182,7 @@ button.submit-btn:hover {
   font-size: 1.1rem;
   background: #fff;
   padding: 18px 22px;
-  border-left: 6px solid var(--accent);
+  border-left: 6px solid black;
   border-radius: var(--radius);
   font-weight: 600;
   color: #080808;
@@ -192,7 +192,7 @@ button.submit-btn:hover {
 .contact-urgent a:hover { text-decoration: underline; }
 
 /* FOOTER */
-footer { background: var(--beige); padding: 0px 20px 20px; }
+footer { background: var(--beige); padding: 30px 20px 20px; }
 .footer-bottom { max-width: var(--container-max); margin: 0 auto; text-align: center; }
 .footer-bottom p { margin: 3px 0; color: var(--accent-2); font-size: 0.85rem; }
 .footer-small a{

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - Property Inspections</title>
+  <meta name="description" content="Book your property inspection with Property Inspections. Complete the form to organize a precise and professional inspection.">
+  <link rel="stylesheet" href="/CSS/boeking.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-container">
+    <a href="/HOME/home_eng.html">
+      <img src="/IMAGES/Test_Logo.png" alt="Property Inspections logo" class="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/HOME/home_eng.html">Home</a></li> |
+        <li><a href="/INFO/info_eng.html">Info</a></li> |
+        <li><a href="/FAQ/faqEN.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<hr>
+
+<main>
+  <div class="titleh1">
+    <h1>Book your property inspection</h1>
+  </div>
+
+  <section>
+    <p class="contact-intro">
+      Please carefully complete the form below to book your entry or exit inspection.
+      All information is required to ensure proper planning and correct invoicing.
+    </p>
+
+    <form action="/BOEKING/boeking_eng.html" method="post">
+
+      <!-- TENANT & OWNER -->
+      <div class="owner-tenant-container">
+
+        <!-- TENANT -->
+        <div class="column huurder">
+          <h3>Tenant details</h3>
+
+          <label for="tenant_name">Tenant last name*:</label>
+          <input type="text" id="tenant_name" name="tenant_name" placeholder="Last name" required>
+
+          <label for="tenant_firstname">Tenant first name*:</label>
+          <input type="text" id="tenant_firstname" name="tenant_firstname" placeholder="First name" required>
+
+          <label for="tenant_email">Tenant email address*:</label>
+          <input type="email" id="tenant_email" name="tenant_email" placeholder="Email" required>
+
+          <label for="tenant_phone">Tenant phone number:</label>
+          <input type="tel" id="tenant_phone" name="tenant_phone" placeholder="+32 ...">
+
+          <label>Tenant address:</label>
+          <input type="text" name="tenant_street" placeholder="Street and number">
+          <input type="text" name="tenant_city" placeholder="City">
+          <input type="text" name="tenant_postcode" placeholder="Postal code">
+        </div>
+
+        <!-- OWNER -->
+        <div class="column eigenaar">
+          <h3>Owner details</h3>
+
+          <label for="owner_name">Owner last name*:</label>
+          <input type="text" id="owner_name" name="owner_name" placeholder="Last name" required>
+
+          <label for="owner_firstname">Owner first name*:</label>
+          <input type="text" id="owner_firstname" name="owner_firstname" placeholder="First name" required>
+
+          <label for="owner_email">Owner email address*:</label>
+          <input type="email" id="owner_email" name="owner_email" placeholder="Email" required>
+
+          <label for="owner_phone">Owner phone number:</label>
+          <input type="tel" id="owner_phone" name="owner_phone" placeholder="+32 ...">
+
+          <label>Owner address:</label>
+          <input type="text" name="owner_street" placeholder="Street and number">
+          <input type="text" name="owner_city" placeholder="City">
+          <input type="text" name="owner_postcode" placeholder="Postal code">
+        </div>
+
+      </div>
+
+      <!-- PROPERTY DETAILS -->
+      <div class="pandgegevens">
+        <h3>Property information</h3>
+
+        <label for="street">Street*:</label>
+        <input type="text" id="street" name="street" placeholder="Street" required>
+
+        <label for="number">Number*:</label>
+        <input type="text" id="number" name="number" placeholder="Number" required>
+
+        <label for="box">Unit / Box:</label>
+        <input type="text" id="box" name="box" placeholder="Unit">
+
+        <label for="postcode">Postal code*:</label>
+        <input type="text" id="postcode" name="postcode" placeholder="Postal code" required>
+
+        <label for="city">City*:</label>
+        <input type="text" id="city" name="city" placeholder="City" required>
+
+        <label for="property_type">Property type*:</label>
+        <select id="property_type" name="property_type" required>
+          <option value="" disabled selected>Select property type...</option>
+          <option value="garage">Garage</option>
+          <option value="studio">Studio</option>
+          <option value="appartement1">Apartment 1 bedroom</option>
+          <option value="appartement2">Apartment 2 bedrooms</option>
+          <option value="appartement3">Apartment 3 bedrooms</option>
+          <option value="house">House</option>
+        </select>
+
+        <label for="furnished">Furnished*:</label>
+        <select id="furnished" name="furnished" required>
+          <option value="" disabled selected>Select...</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <!-- INSPECTION -->
+        <h3>Inspection details</h3>
+
+        <label for="inspection_type">Inspection type*:</label>
+        <select id="inspection_type" name="inspection_type" required>
+          <option value="" disabled selected>Select...</option>
+          <option value="entry">Entry inspection</option>
+          <option value="exit">Exit inspection</option>
+        </select>
+
+        <label for="date">Preferred date*:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred time:</label>
+        <input type="time" id="time" name="time">
+
+        <label for="message">Additional information:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Remarks, preferences or useful information..."></textarea>
+
+        <button type="submit" class="submit-btn">
+          Booking request
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <p class="contact-urgent">
+    <strong>Urgent?</strong> Contact us directly at
+    <a href="tel:+32490396364">+32 490 39 63 64</a>.
+    We will be happy to assist you.
+  </p>
+</main>
+
+<hr>
+
+<footer>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Property Inspections — All rights reserved.</p>
+    <p class="footer-small">
+      This website is owned by Property Inspections.
+      For any legal questions:
+      <a href="/HOME/home_eng.html#contact">Contact us</a>.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

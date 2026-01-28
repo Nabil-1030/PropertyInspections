@@ -15,9 +15,9 @@
     <a href="/HOME/home_nl.html"><img src="/IMAGES/Test_Logo.png" alt="Property Inspections logo" class="logo"></a>
     <nav>
       <ul>
-        <li><a href="/HOME/home_nl.html">Home</a></li>
-        <li><a href="/INFO/info_nl.html">Info</a></li>
-        <li><a href="/FAQ/faqNL.html">FAQ</a></li>
+        <li><a href="/HOME/home_nl.html">Home</a></li> |
+        <li><a href="/INFO/info_nl.html">Info</a></li> |
+        <li><a href="/FAQ/faqNL.html">FAQ</a></li> 
       </ul>
     </nav>
   </div>
@@ -46,7 +46,7 @@
           <label for="tenant_name">Naam huurder*:</label>
           <input type="text" id="tenant_name" name="tenant_name" placeholder="Naam " required>
 
-          <label for="owner_firstname">Voornaam eigenaar*:</label>
+          <label for="owner_firstname">Voornaam huurder*:</label>
           <input type="text" id="tenant_firstname" name="tenant_firstname" placeholder="Voornaam" required>
 
           <label for="tenant_email">E-mail huurder*:</label>
@@ -96,6 +96,9 @@
         <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required>
         </div>
 
+
+        <!-- Plaatsbeschrijving -->
+        <h3>Plaatsbeschrijving</h3>
         <label for="type_pand">Type pand*:</label>
         <select id="type_pand" name="type_pand" required>
           <option value="" disabled selected>Kies het type pand...</option>
@@ -107,15 +110,6 @@
           <option value="woning">Woning</option>
         </select>
 
-        <label for="gemeubeld">Gemeubeld*:</label>
-        <select id="gemeubeld" name="gemeubeld" required>
-          <option value="" disabled selected>Kies...</option>
-          <option value="ja">Ja</option>
-          <option value="nee">Nee</option>
-        </select>
-
-        <!-- Plaatsbeschrijving -->
-        <h3>Plaatsbeschrijving</h3>
         <label for="type_plaatsbeschrijving">Type plaatsbeschrijving*:</label>
         <select id="type_plaatsbeschrijving" name="type_plaatsbeschrijving" required>
           <option value="" disabled selected>Kies een type...</option>
@@ -123,13 +117,22 @@
           <option value="uittrede">Uittrede</option>
         </select>
 
+        <label for="gemeubeld">Gemeubeld*:</label>
+        <select id="gemeubeld" name="gemeubeld" required>
+          <option value="" disabled selected>Kies...</option>
+          <option value="ja">Ja</option>
+          <option value="nee">Nee</option>
+        </select>
+
         <label for="datum">Gewenste datum*:</label>
         <input type="date" id="datum" name="datum" required>
+        <label for="time">Kies het gewenste uur*:</label>
+        <input type="time" id="time" name="time">
 
         <label for="message">Extra informatie:</label>
         <textarea id="message" name="message" rows="4" placeholder="Opmerkingen, voorkeuren, speciale wensen..."></textarea>
 
-        <button type="submit" class="submit-btn">Boeking aanvragen</button>
+        <button type="submit" class="submit-btn"><a href="/BOEKING/PAYMENT/payment_nl.html"></a> Boeking aanvragen</button>
       </div>
     </form>
   </section>
