@@ -4,90 +4,106 @@
   --text-light: #4b5563;
   --muted: #6b7280;
   --accent: #3b2813ca;
-  --accent-2: black;
-  --black: #000000;
-  --shadow: 0 8px 30px rgba(15,111,191,0.08);
+  --accent-2: #000;
+  --shadow: 0 8px 30px rgba(0,0,0,0.08);
   --radius-lg: 16px;
   --radius: 10px;
   --container-max: 1100px;
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
 }
 
-/* Base */
+/* ===============================
+   RESET & BASE
+================================ */
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; font-family: var(--font-sans); background: var(--beige); color: var(--text); line-height: 1.6; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: var(--beige);
+  color: var(--text);
+  line-height: 1.6;
+}
+
 a { text-decoration: none; color: inherit; }
 
-hr{border:none;height:3px;background:linear-gradient(90deg,transparent,var(--accent-2),transparent);margin:24px 0;}
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent-2), transparent);
+  margin: 24px 0;
+}
 
-
-/* HEADER */
+/* ===============================
+   HEADER
+/* ===============================
+   HEADER (LOGO LINKS – NAV MIDDEN)
+================================ */
 header {
   background: var(--beige);
-  border-bottom: 1px solid var(--hr);
-  position: relative;
 }
 
-/* Professionele 3-koloms header – FAQ stijl */
 .header-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 12px 20px;
+
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  width: 100%;
-  padding: 10px 20px;
 }
 
-/* Logo links */
+/* Logo helemaal links */
 .logo {
   height: 90px;
-  width: auto;
-  border-radius: 13px;
+  border-radius: 12px;
   justify-self: start;
 }
 
-/* NAV – FAQ stijl */
+/* Navigatie exact gecentreerd */
 nav {
-  justify-self: end;
-  z-index: 2;
+  justify-self: center;
 }
 
 nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;         
+  gap: 30px;
   list-style: none;
-  padding-top: 20px;  
   margin: 0;
-  font-family: 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-  font-size: 18px;  
+  padding: 0;
 }
 
 nav a {
-  text-decoration: none;
-  color: var(--accent-2);
+  font-weight: 700;
+  font-size: 1.1rem;
   padding: 6px 10px;
   border-radius: 6px;
-  transition: 0.16s;
-  font-weight: 700;
-  font-size: 1.3rem;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  background: #49464673;
+  background: rgba(0,0,0,0.08);
   transform: translateY(-2px);
 }
 
-nav a.active {
-  text-decoration: underline;
+
+/* ===============================
+   MAIN
+================================ */
+main {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 20px 20px 80px;
 }
 
-/* MAIN */
-main { max-width: var(--container-max); margin: 0 auto; padding: 30px 20px 80px; }
+.titleh1 h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
 
-.titleh1 { text-align: center; font-size: 1.2rem; font-weight: 700; margin-bottom: 80px; }
-main h1::after {
+.titleh1 h1::after {
   content: "";
   display: block;
   width: 70px;
@@ -98,17 +114,21 @@ main h1::after {
 }
 
 section {
-  background: rgba(255,255,255,0.95);
-  padding: 32px 28px;
+  background: #fff;
+  padding: 36px 32px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
-  border: 1px solid rgba(11,79,145,0.06);
-  margin-bottom: 40px;
 }
 
-.contact-intro { font-size: 1.15rem; margin-bottom: 1.5em; color: var(--text-light); }
+.contact-intro {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
 
-/* FLEX CONTAINER Huurder/Eigenaar */
+/* ===============================
+   HUURDER / EIGENAAR
+================================ */
 .owner-tenant-container {
   display: flex;
   gap: 30px;
@@ -121,101 +141,202 @@ section {
   min-width: 280px;
 }
 
-/* FORM STYLING */
+/* ===============================
+   FORM
+================================ */
 form h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.25rem;
   margin-bottom: 15px;
   text-decoration: underline;
-  color: rgba(44, 39, 39, 0.971);
-
 }
 
-label { font-weight: 600; margin-top: 10px; display: block; }
+label {
+  font-weight: 600;
+  margin-top: 12px;
+  display: block;
+}
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 14px 16px;
   border: 1px solid #ccc;
   border-radius: var(--radius);
-  font-family: inherit;
   font-size: 1rem;
   margin-top: 6px;
-  transition: all 0.3s ease;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
   border-color: var(--accent);
-  box-shadow: 0 0 8px rgba(59,40,19,0.2);
+  box-shadow: 0 0 8px rgba(59,40,19,0.25);
 }
 
-textarea { min-height: 140px; resize: vertical; }
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* ===============================
+   PANDGEGEVENS
+================================ */
+.pandgegevens h3 {
+  margin-top: 30px;
+}
+
+.pandgegevens input,
+.pandgegevens select,
+.pandgegevens textarea {
+  margin-bottom: 12px;
+}
+
+/* ===============================
+   RADIO SECTIONS (BELANGRIJK FIX)
+================================ */
+/* ===============================
+   RADIO SECTIONS – FIX LAYOUT
+================================ */
+.payer-section,
+.payment-section {
+  margin-top: 10px;
+}
+
+.payer-section label,
+.payment-section label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 12px;
+
+  cursor: pointer;
+  transition: 0.25s;
+  background: #fff;
+
+  font-weight: 500;
+}
+
+/* hover */
+.payer-section label:hover,
+.payment-section label:hover {
+  border-color: var(--accent);
+  background: #faf8f5;
+}
+
+/* radio input */
+.payer-section input,
+.payment-section input {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+
+  accent-color: var(--accent);
+}
+/* ===============================
+   PAYMENT ICONS (CASH / ONLINE)
+================================ */
+.payment-section label img {
+  width: 36px;         /* breedte van het icoon */
+  height: 36px;        /* hoogte van het icoon */
+  object-fit: contain;  /* behoud de verhouding, niet vervormen */
+  margin-right: 12px;   /* ruimte tussen icoon en tekst */
+}
+
+/* zorg dat label flexbox blijft zodat icoon + radio + tekst netjes uitgelijnd zijn */
+.payment-section label {
+  display: flex;
+  align-items: center;
+  gap: 12px;           /* extra ruimte tussen radio en tekst */
+}
+
+/* radio button netjes naast icoon */
+.payment-section input[type="radio"] {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
 
 
-/* SUBMIT BUTTON */
-button.submit-btn {
- color: white;
-  font-weight: bold;
-  text-decoration: none;
-  background-color:#424345;
-  padding: 10px 40px 10px 40px;
-  border-radius: 10px;
+/* ===============================
+   SUBMIT
+================================ */
+.submit-btn {
+  margin-top: 30px;
   width: 100%;
+  padding: 16px;
+  background: #424345;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-button.submit-btn:hover {
-  transform: translateX(-2px);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.512);
+.submit-btn:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-/* PANDGEGEVENS EN PLAATSBESCHRIJVING */
-.pandgegevens h3 { margin-top: 20px; }
-.pandgegevens input, .pandgegevens select, .pandgegevens textarea { margin-bottom: 12px; }
-
-.pandgegevens input{
-  margin-bottom: 0px;
-}
-
-/* CONTACT URGENT */
+/* ===============================
+   CONTACT URGENT
+================================ */
 .contact-urgent {
-  font-size: 1.1rem;
+  margin-top: 40px;
   background: #fff;
   padding: 18px 22px;
-  border-left: 6px solid black;
+  border-left: 6px solid #000;
   border-radius: var(--radius);
   font-weight: 600;
-  color: #080808;
 }
 
-.contact-urgent a { font-weight: 700; color: red; }
-.contact-urgent a:hover { text-decoration: underline; }
-
-/* FOOTER */
-footer { background: var(--beige); padding: 30px 20px 20px; }
-.footer-bottom { max-width: var(--container-max); margin: 0 auto; text-align: center; }
-.footer-bottom p { margin: 3px 0; color: var(--accent-2); font-size: 0.85rem; }
-.footer-small a{
-  color: black;
-  font-weight: bold;
+.contact-urgent a {
+  color: red;
+  font-weight: 700;
 }
 
-.footer-small a:hover{
-  text-decoration: underline;
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  background: var(--beige);
+  padding: 10px auto 40px auto;
+  margin-bottom: 30px;
 }
 
-/* HR */
-hr { border: none; height: 3px; background: linear-gradient(90deg, transparent, var(--accent-2), transparent); margin: 10px 0px 10px; border-radius: 3px; }
+.footer-bottom { text-align: center; }
+.footer-bottom p { font-size: 0.85rem; color: var(--accent-2); margin: 3px 0; }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  .owner-tenant-container { flex-direction: column; }
-  .column { min-width: 100%; }
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .owner-tenant-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 520px) {
-  nav ul { flex-direction: column; gap: 12px; }
-  .titleh1 { font-size: 1.2rem; }
-  .contact-urgent { font-size: 1rem; padding: 14px 16px; }
-  button.submit-btn { font-size: 1rem; padding: 12px; }
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .titleh1 h1 {
+    font-size: 1.6rem;
+  }
+
+  section {
+    padding: 26px 20px;
+  }
 }

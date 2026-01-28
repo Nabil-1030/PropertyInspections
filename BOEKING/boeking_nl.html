@@ -9,7 +9,6 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="header-container">
     <a href="/HOME/home_nl.html"><img src="/IMAGES/Test_Logo.png" alt="Property Inspections logo" class="logo"></a>
@@ -17,88 +16,60 @@
       <ul>
         <li><a href="/HOME/home_nl.html">Home</a></li> |
         <li><a href="/INFO/info_nl.html">Info</a></li> |
-        <li><a href="/FAQ/faqNL.html">FAQ</a></li> 
+        <li><a href="/FAQ/faqNL.html">FAQ</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
 <hr>
 
 <main>
-  <div class="titleh1">
-    <h1>Boek uw plaatsbeschrijving</h1>
-  </div>
+  <div class="titleh1"><h1>Boek uw plaatsbeschrijving</h1></div>
 
   <section>
-    <p class="contact-intro">
-      Vul onderstaand formulier volledig in om uw intrede- of uittredeplaatsbeschrijving te reserveren. Alle velden zijn belangrijk voor een correcte afspraak en facturatie.
-    </p>
+    <p class="contact-intro">Vul onderstaand formulier volledig in om uw intrede- of uittredeplaatsbeschrijving te reserveren. Alle velden zijn belangrijk voor een correcte afspraak en facturatie.</p>
 
-    <form action="/BOEKING/boeking_nl.html" method="post">
+    <form action="create_payment.php" method="post">
 
-      <!-- Eigenaar & Huurder naast elkaar -->
       <div class="owner-tenant-container">
-        
         <!-- Huurder -->
         <div class="column huurder">
           <h3>Gegevens Huurder</h3>
           <label for="tenant_name">Naam huurder*:</label>
-          <input type="text" id="tenant_name" name="tenant_name" placeholder="Naam " required>
-
-          <label for="owner_firstname">Voornaam huurder*:</label>
-          <input type="text" id="tenant_firstname" name="tenant_firstname" placeholder="Voornaam" required>
-
+          <input type="text" id="tenant_name" name="tenant_name" required>
+          <label for="tenant_firstname">Voornaam huurder*:</label>
+          <input type="text" id="tenant_firstname" name="tenant_firstname" required>
           <label for="tenant_email">E-mail huurder*:</label>
-          <input type="email" id="tenant_email" name="tenant_email" placeholder="E-mail " required>
-
+          <input type="email" id="tenant_email" name="tenant_email" required>
           <label for="tenant_phone">Telefoon huurder:</label>
-          <input type="tel" id="tenant_phone" name="tenant_phone" placeholder="+32 ...">
-
+          <input type="tel" id="tenant_phone" name="tenant_phone">
           <label>Adres huurder:</label>
-          <input type="text" id="adres_tenant_straat" name="adres_tenant_straat" placeholder="Straat + nummer">
-          <input type="text" id="adres_tenant_gemeente" name="adres_tenant_gemeente" placeholder="Gemeente">
-          <input type="text" id="adres_tenant_postcode" name="adres_tenant_postcode" placeholder="Postcode">
+          <input type="text" name="adres_tenant_straat" placeholder="Straat + nummer">
+          <input type="text" name="adres_tenant_gemeente" placeholder="Gemeente">
+          <input type="text" name="adres_tenant_postcode" placeholder="Postcode">
         </div>
 
         <!-- Eigenaar -->
         <div class="column eigenaar">
           <h3>Gegevens Eigenaar</h3>
           <label for="owner_name">Naam eigenaar*:</label>
-          <input type="text" id="owner_name" name="owner_name" placeholder="Naam" required>
-
+          <input type="text" id="owner_name" name="owner_name" required>
           <label for="owner_firstname">Voornaam eigenaar*:</label>
-          <input type="text" id="owner_firstname" name="owner_firstname" placeholder="Voornaam" required>
-
+          <input type="text" id="owner_firstname" name="owner_firstname" required>
           <label for="owner_email">E-mail eigenaar*:</label>
-          <input type="email" id="owner_email" name="owner_email" placeholder="E-mail" required>
-
+          <input type="email" id="owner_email" name="owner_email" required>
           <label for="owner_phone">Telefoon eigenaar:</label>
-          <input type="tel" id="owner_phone" name="owner_phone" placeholder="+32 ...">
-
+          <input type="tel" id="owner_phone" name="owner_phone">
           <label>Adres eigenaar:</label>
-          <input type="text" id="adres_owner_straat" name="adres_owner_straat" placeholder="Straat + nummer">
-          <input type="text" id="adres_owner_gemeente" name="adres_owner_gemeente" placeholder="Gemeente">
-          <input type="text" id="adres_owner_postcode" name="adres_owner_postcode" placeholder="Postcode">
+          <input type="text" name="adres_owner_straat" placeholder="Straat + nummer">
+          <input type="text" name="adres_owner_gemeente" placeholder="Gemeente">
+          <input type="text" name="adres_owner_postcode" placeholder="Postcode">
         </div>
-
-      </div> <!-- einde owner-tenant-container -->
+      </div>
 
       <!-- Pandgegevens -->
       <div class="pandgegevens">
         <h3>Pandgegevens</h3>
-        <div class="adres_pand">
-        <label for="straat">Adres van het pand*:</label>
-        <input type="text" id="straat" name="straat" placeholder="Straat" required>
-        <input type="text" id="nr" name="nr" placeholder="Huisnummer" required>
-        <input type="text" id="bus" name="bus" placeholder="Busnummer">
-        <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
-        <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required>
-        </div>
-
-
-        <!-- Plaatsbeschrijving -->
-        <h3>Plaatsbeschrijving</h3>
         <label for="type_pand">Type pand*:</label>
         <select id="type_pand" name="type_pand" required>
           <option value="" disabled selected>Kies het type pand...</option>
@@ -112,7 +83,7 @@
 
         <label for="type_plaatsbeschrijving">Type plaatsbeschrijving*:</label>
         <select id="type_plaatsbeschrijving" name="type_plaatsbeschrijving" required>
-          <option value="" disabled selected>Kies een type...</option>
+          <option value="" disabled selected>Kies intrede of uittrede...</option>
           <option value="intrede">Intrede</option>
           <option value="uittrede">Uittrede</option>
         </select>
@@ -129,10 +100,22 @@
         <label for="time">Kies het gewenste uur*:</label>
         <input type="time" id="time" name="time">
 
-        <label for="message">Extra informatie:</label>
-        <textarea id="message" name="message" rows="4" placeholder="Opmerkingen, voorkeuren, speciale wensen..."></textarea>
+        <h3>Wie betaalt het voorschot?</h3>
+        <div class="payer-section">
+          <label><input type="radio" name="payer" value="eigenaar" required> Eigenaar</label>
+          <label><input type="radio" name="payer" value="huurder"> Huurder</label>
+        </div>
 
-        <button type="submit" class="submit-btn"><a href="/BOEKING/PAYMENT/payment_nl.html"></a> Boeking aanvragen</button>
+        <div class="payment-section">
+        <h3>Betaalmethode</h3>
+        <label><img src="/IMAGES/cash-icon.png" alt=""><input type="radio" name="payment_method" value="cash" checked> Cash (volledige betaling ter plaatse)</label>
+        <label><img src="/IMAGES/online-icon.png" alt=""><input type="radio" name="payment_method" value="online"> Online betaling (voorschot 30%)</label>
+        </div>
+
+        <label for="message">Extra informatie:</label>
+        <textarea id="message" name="message" placeholder="Opmerkingen, voorkeuren, speciale wensen..."></textarea>
+
+        <button type="submit" class="submit-btn">Bevestig reservatie</button>
       </div>
     </form>
   </section>
@@ -141,12 +124,12 @@
     <strong>Dringend?</strong> Bel ons rechtstreeks op <a href="tel:+32490396364">+32 490 39 63 64</a>. Wij helpen u graag verder!
   </p>
 </main>
+
 <hr>
 
 <footer>
   <div class="footer-bottom">
-    <p>&copy; 2025 Property Inspections — Alle rechten voorbehouden.</p>
-    <p class="footer-small">Deze website is eigendom van Property Inspections. Voor vragen over juridische zaken: <a href="/HOME/home_nl.html#contact">Contacteer ons</a>.</p>
+    <p>&copy; 2025 Property Inspections — Alle rechten voorbehouden. Deze website is eigendom van Property Inspections.</p>
   </div>
 </footer>
 
