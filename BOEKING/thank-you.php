@@ -53,7 +53,7 @@ if ($paymentId) {
       <p>Bedrag: <?= htmlspecialchars($amount) ?></p>
       <p>Omschrijving: <?= htmlspecialchars($description) ?></p>
     <?php endif; ?>
-    <p>We hebben uw boeking ontvangen. U ontvangt binnenkort een bevestigingsmail.</p>
+    <p>We hebben uw boeking ontvangen. U ontvangt binnen 24-48h een bevestigingsmail.</p>
     <a href="/HOME/home_nl.html" class="submit-btn">Terug naar Home</a>
   </section>
 </main>

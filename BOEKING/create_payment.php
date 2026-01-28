@@ -38,8 +38,8 @@ $bedrag_volledig = $prijzen[$type_pand][$type_plaats] ?? 0;
 $bedrag_voorschot = $bedrag_volledig * 0.3;
 $bedrag_str = number_format($bedrag_voorschot, 2, '.', '');
 
-// --- 3. Verstuur mail naar contact@pibelgium.be ---
-$to = "contact@pibelgium.be";
+// --- 3. Verstuur mail naar contact@pibelgium.com ---
+$to = "contact@pibelgium.com";
 $subject = "Nieuwe boeking: $type_plaats - $type_pand";
 
 $email_message = "
@@ -67,13 +67,9 @@ $email_message = "
 if($payment_method === 'cash') {
     $email_message .= "
     <p>Bedrag volledig: €" . number_format($bedrag_volledig, 2, ',', '.') . " (volledig te betalen ter plaatse)</p>
-    <p>Voorschot: €" . number_format($bedrag_volledig, 2, ',', '.') . "</p>
     <p><strong>Opmerking:</strong> Klanten regelen zelf de verdeling van betaling tussen eigenaar en huurder.</p>";
-} else {
-    $email_message .= "
-    <p>Bedrag volledig: €" . number_format($bedrag_volledig, 2, ',', '.') . "</p>
-    <p>Voorschot (30%): €" . number_format($bedrag_voorschot, 2, ',', '.') . "</p>";
 }
+
 
 $email_message .= "
 <h3>Extra informatie</h3>
@@ -84,14 +80,14 @@ $email_message .= "
 
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8\r\n";
-$headers .= "From: no-reply@pibelgium.be\r\n";
+$headers .= "From: contact@pibelgium.com\r\n";
 
 mail($to, $subject, $email_message, $headers);
 
 // --- 4. Cash of Mollie? ---
 if($payment_method === 'cash') {
     // Redirect naar bevestigde pagina
-    header("Location: cash-confirmed.php");
+    header("Location: /BOEKING/cash-confirmed.php");
     exit;
 } else {
     // Mollie betaling aanmaken

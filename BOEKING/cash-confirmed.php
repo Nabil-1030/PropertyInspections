@@ -54,7 +54,7 @@
     <span class="cash-icon"></span>
     <p>Bedankt voor uw reservatie!</p>
     <p>Uw boeking is correct ontvangen en zal bij aankomst contant betaald worden.</p>
-    <p>Voor annulatie gelieve een mail te sturen naar <strong><a href="mailto:">contact@pibelgium.com</a></strong> zo snel mogelijk!</p>
+    <p>Voor annulatie gelieve een mail te sturen naar <strong><a href="mailto:contact@pibelgium.com">contact@pibelgium.com</a></strong> zo snel mogelijk!</p>
     <p>Indien u nog vragen heeft, kunt u ons altijd bereiken op <a href="tel:+32490396364">+32 490 39 63 64</a>.</p>
 
     <a href="/HOME/home_nl.html" class="submit-btn">Terug naar Home</a>
